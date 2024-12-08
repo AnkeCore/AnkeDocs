@@ -1,0 +1,71 @@
+/**
+ * Any CSS included here will be global. The classic template
+ * bundles Infima by default. Infima is a CSS framework designed to
+ * work well for content-centric websites.
+ */
+
+/* You can override the default Infima variables here. */
+:root {
+  --ifm-color-primary: #2e8555;
+  --ifm-color-primary-dark: #29784c;
+  --ifm-color-primary-darker: #277148;
+  --ifm-color-primary-darkest: #205d3b;
+  --ifm-color-primary-light: #33925d;
+  --ifm-color-primary-lighter: #359962;
+  --ifm-color-primary-lightest: #3cad6e;
+  --ifm-code-font-size: 95%;
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+
+  --ifm-background-color: #0d0d0d!important;
+  --ifm-footer-background-color: #0d0d0d!important;
+}
+
+
+[data-theme='dark'] {
+  --ifm-color-primary: #3498db; 
+  --ifm-color-primary-dark: #2c81c0; 
+  --ifm-color-primary-darker: #2569a3; 
+  --ifm-color-primary-darkest: #1d5285; 
+  --ifm-color-primary-light: #4aa9e0; 
+  --ifm-color-primary-lighter: #5db9e6; 
+  --ifm-color-primary-lightest: #7cd0ef;
+  --docusaurus-highlighted-code-line-bg: rgba(52, 152, 219, 0.2);
+}
+
+
+.menu__list-item-collapsible > .menu__link {
+  color: #ffffff; 
+}
+
+.menu__list-item-collapsible {
+  margin-top: 1.5rem;
+}
+
+.menu__link {
+  color: #ffffff7d; 
+}
+
+.navbar {
+  background: var(--ifm-background-color)!important;
+  border-bottom: 1px solid var(--ifm-toc-border-color);
+}
+
+.menu {
+  padding: 1.5rem .5rem!important;
+}
+
+blockquote {
+  margin-top: 2.25rem!important;
+  padding: 10px;
+}
+blockquote p {
+  opacity: .4;
+}
+
+.footer {
+  border-top: 1px solid var(--ifm-toc-border-color);
+  padding: 15px;
+}
+.footer__copyright {
+  text-align: right;
+}

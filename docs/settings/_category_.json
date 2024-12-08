@@ -1,0 +1,9 @@
+{
+  "label": "⚙️ Settings",
+  "position": 300,
+  "collapsible": false,
+  "link": {
+    "type": "generated-index",
+    "slug": "/category/settings"
+  }
+}
