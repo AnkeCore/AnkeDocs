@@ -7,9 +7,9 @@ slug: /
 
 Here you will find all the information you need to run our bot on your Discord server.
 
+<hr />
 
-:::danger AnkeDocs is currently in BETA version
-
-AnkeDocs is currently in BETA version and therefore bugs may occur. If you find any bugs please report them to us via our discord server.
-
-:::
+### Need to know more? Join our community on Discord!
+<a href="https://discordapp.com/invite/kbgehhK">
+    <img src="https://discordapp.com/api/guilds/547806748191490062/widget.png?style=banner2" />
+</a>
