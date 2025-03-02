@@ -1,0 +1,102 @@
+---
+
+description: "With the welcome messages feature, the bot can send messages to a selected channel about new users joining or users leaving the server. Below, you will find a guide on how to set up this feature."
+
+---
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+# Welcome Messages
+
+:::danger
+
+This feature is currently in the testing phase, so bugs may occur. If you encounter any issues, please report them via our Discord server or using the /feedback command. Thank you!
+
+:::
+
+With the welcome messages feature, the bot can send messages to a selected channel about new users joining or users leaving the server. Below, you will find a guide on how to set up this feature.
+
+***
+
+## Enabling or Disable welcome/leave messages
+
+To enable or disable welcome or leave messages, enter the command below. After entering the command, the bot will send a message to successfully enable or disable welcome/leave messages.
+
+<Tabs>
+  <TabItem value="enable" label="Enable join/leave messages" default>
+    #### Command for welcome messages
+    ```
+    /settings togglewelcome type:✅ Join Message enabled:True
+    ```
+
+    #### Command for leave messages
+    ```
+    /settings togglewelcome type:❌ Leave Message enabled:True
+    ```
+  </TabItem>
+  <TabItem value="disable" label="Disable join/leave messages">
+    #### Command for welcome messages
+    ```
+    /settings togglewelcome type:✅ Join Message enabled:False
+    ```
+
+    #### Command for leave messages
+    ```
+    /settings togglewelcome type:❌ Leave Message enabled:False
+    ```
+  </TabItem>
+</Tabs>
+
+
+***
+
+## Setting up welcome or leave messages
+
+<Tabs>
+  <TabItem value="join_messages" label="Setting up Join messages" default>
+    #### Setup command for welcome messages
+    ```
+    /settings setwelcomemessage type:✅ Join Message (The user has joined the server.) channel: {args..}
+    ```
+
+  </TabItem>
+  <TabItem value="leave_messages" label="Setting up Leave messages">
+    #### Setup command for leave messages
+    ```
+    /settings setwelcomemessage type:❌ Leave Message (The user has left the server.) channel: {args..}
+    ```
+  </TabItem>
+</Tabs>
+
+:::warning
+
+Each time the setup command is executed, the previous record will be erased from our memory. Therefore, we recommend saving the command for future updates.
+
+:::
+
+#### Available arguments in the command:
+| Arg | Description |
+|:-----|:------|
+| type | Message type (join/leave) |
+| channel | The channel where the message is sent. |
+| message | The content of the message may contain placeholders. |
+| embed | Use embed message? (true/false) |
+| embed_author_user_avatar | Use the user's avatar as the author? (true/false) |
+| embed_author_text | Text author embed message. |
+| embed_title | Title embed message. |
+| embed_description | Description of the embed message. |
+| embed_color | Embed message color (#HEX code). |
+| embed_thumbnails_user_avatar | Use a user's avatar as a thumbnail? (true/false) |
+| embed_showtimestamp | Show timestamp? (true/false) |
+| embed_footer_user_avatar | Use the user's avatar as a footer? (true/false) |
+| embed_footer_text | Text footer embed message. |
+
+#### Available placeholders in the command:
+| Placeholder | Description |
+|:-----|:------|
+| \{user\} | Displays user name in format \<\@373880011536465920\>  |
+| \{userName\} | Displays user name in format **FiloooSK** |
+| \{serverName\} | Displays guild name |
+| \{membersCount\} | Displays the current number of members on the server. |
+| \{guildId\} | Displays the server ID |
