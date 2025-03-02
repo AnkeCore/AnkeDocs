@@ -34,9 +34,9 @@ const config: Config = {
         docs: {
           sidebarPath: './sidebars.ts',
           routeBasePath: '/',
-          editUrl: 'https://github.com/AnkeCore/AnkeDocs/edit/main/',
-          showLastUpdateTime: true, 
-          showLastUpdateAuthor: true,
+          //editUrl: 'https://github.com/AnkeCore/AnkeDocs/edit/main/',
+          showLastUpdateTime: false, 
+          showLastUpdateAuthor: false,
         },
         blog: false,
         theme: {
