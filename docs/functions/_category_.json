@@ -1,0 +1,9 @@
+{
+  "label": "🛠️ Functions",
+  "position": 400,
+  "collapsible": false,
+  "link": {
+    "type": "generated-index",
+    "slug": "/category/functions"
+  }
+}
